@@ -1,0 +1,11 @@
+@import "../../shared/shared";
+
+.main-window, .main-view {
+  min-height: 100vh;
+}
+
+.main-window {
+  background-color: $main-bg-color;
+  color: white;
+  font-family: sans-serif;
+}
