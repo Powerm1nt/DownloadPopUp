@@ -15,6 +15,7 @@
 
 
     .lnk-other-arch {
+      display: inline;
       font-size: 15pt;
       text-align: center;
       position: relative;
@@ -43,7 +44,9 @@
       .btns {
         display: flex;
         gap: 20px;
+
         .download-btn {
+          text-transform: unset;
           display: block;
           background: linear-gradient(
                           148.61deg, rgba(255, 139, 54, 0.81) 11.06%,
@@ -63,7 +66,6 @@
           }
 
           .lbl-arch {
-            font-weight: bold;
             font-size: 12pt;
           }
         }
