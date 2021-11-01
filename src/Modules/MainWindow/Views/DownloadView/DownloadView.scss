@@ -6,44 +6,59 @@
   justify-content: center;
 
   .download-ui {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
     height: 500px;
     width: 50em;
     background: #2a363b;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.61);
-    padding: 15px 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.61);
     border-radius: 15px;
-
 
     .lnk-other-arch {
       display: inline;
       font-size: 15pt;
       text-align: center;
-      position: relative;
     }
 
     .ui-header {
-      position: fixed;
+      padding: 15px 0;
+      width: 100%;
+      background: linear-gradient(96.67deg, rgba(255, 0, 0, 0.49) -12.56%, #FF9900 93.53%);
+
 
       .hd-sub1 {
+        padding: 0 5px;
         font-size: 18pt;
       }
 
       .hd-sub2 {
+        text-align: center;
         font-size: 14pt;
       }
     }
 
     .btns-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       min-height: 100%;
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 30px;
       align-items: center;
       justify-content: center;
 
+      .dnl-title {
+        font-size: 25pt;
+        padding: 10px 0;
+      }
+
       .btns {
         display: flex;
-        gap: 20px;
+        gap: 30px;
 
         .download-btn {
           text-transform: unset;
