@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MainWindow from "./Modules/MainWindow/MainWindow";
+import "./shared/main.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MainWindow />
   </React.StrictMode>,
   document.getElementById('root')
 );
