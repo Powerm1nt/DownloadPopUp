@@ -1,0 +1,73 @@
+.download-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .download-ui {
+    height: 500px;
+    width: 50em;
+    background: #2a363b;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.61);
+    padding: 15px 20px;
+    border-radius: 15px;
+
+
+    .lnk-other-arch {
+      font-size: 15pt;
+      text-align: center;
+      position: relative;
+    }
+
+    .ui-header {
+      position: fixed;
+
+      .hd-sub1 {
+        font-size: 18pt;
+      }
+
+      .hd-sub2 {
+        font-size: 14pt;
+      }
+    }
+
+    .btns-container {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+      justify-content: center;
+
+      .btns {
+        display: flex;
+        gap: 20px;
+        .download-btn {
+          display: block;
+          background: linear-gradient(
+                          148.61deg, rgba(255, 139, 54, 0.81) 11.06%,
+                          rgba(255, 111, 63, 0.868612) 56.91%,
+                          rgba(255, 0, 0, 0.98) 139.53%
+          );
+          color: white;
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+          width: 150px;
+          height: 150px;
+          transition: transform 0.2s ease-in-out,
+          box-shadow 0.2s ease-in-out;
+
+          &:hover {
+            box-shadow: 5px -1px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.05);
+          }
+
+          .lbl-arch {
+            font-weight: bold;
+            font-size: 12pt;
+          }
+        }
+      }
+    }
+  }
+}
