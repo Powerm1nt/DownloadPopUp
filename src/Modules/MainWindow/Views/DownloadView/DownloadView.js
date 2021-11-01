@@ -22,13 +22,12 @@ class DownloadView extends Component {
                             </Button>
                             <Button className="download-btn">
                                 <FontAwesomeIcon icon={faWindows} size="5x"/>
-                                <div className="lbl-arch">x64</div>
+                                <div className="lbl-arch">Universel</div>
                             </Button>
                         </div>
 
                         <div className="lnk-other-arch">
-                            Just looking for :
-                            <a href="#">arch</a>
+                            Just looking for : <a href="#">arch</a>
                         </div>
                     </div>
                 </div>
