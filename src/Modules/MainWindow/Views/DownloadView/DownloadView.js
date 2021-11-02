@@ -44,7 +44,7 @@ class DownloadView extends Component {
       <div className="download-view">
         <div className="download-ui">
           <header className="ui-header">
-            <div className="hd-sub1">TheAlfigame Launcher</div>
+            <div className="hd-sub1">TheAlfigame Launcher <span className="wui-title">- Téléchargements</span></div>
           </header>
 
           {err ? <Emoji className="errMsg" text="An error occured 😭" /> : isLoaded ? (
