@@ -74,9 +74,17 @@ class DownloadView extends Component {
               </div>
 
               <div className="lnk-other-arch">
-                <Emoji text="⚙️Pas la bonne architecture ? Essayer la version" /> {this.ua.includes("x64") 
-                ? <a href={items.x86}>x86</a>
-                : <a href={items.x86_64}>x86_64</a>}
+                <span className="lnk-oth-txt">
+                  <Emoji text="⚙️Pas la bonne architecture ?" />
+                </span>
+                <span className="lnk-oth-txt">
+                  Essayez la version
+                  <span className="lnk-oth-txt">
+                  {this.ua.includes("x64") 
+                  ? <a href={items.x86}>x86</a>
+                  : <a href={items.x86_64}>x86_64</a>}
+                  </span>
+                </span>
               </div>
             </div>
           ) : (
