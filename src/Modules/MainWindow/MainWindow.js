@@ -10,11 +10,11 @@ class MainWindow extends Component {
                 <BrowserRouter>
                     <div className="main-view">
                         <Switch>
-                            <Route path="/download">
+                            <Route path="/downloads">
                                 <DownloadView />
                             </Route>
                             <Route path="*">
-                                <Redirect to="/download" />
+                                <Redirect to="/downloads" />
                             </Route>
                         </Switch>
                     </div>
