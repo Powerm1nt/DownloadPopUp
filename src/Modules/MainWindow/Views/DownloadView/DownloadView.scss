@@ -18,6 +18,13 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.61);
     border-radius: 15px;
 
+    @media screen and (max-width: 850px) {
+      height: 100vh;
+      width: 100vw;
+      border-radius: unset;
+      box-shadow: unset;
+    }
+
     .errMsg {
       font-family: 'Raleway', sans-serif;
       font-weight: bold;
@@ -26,9 +33,23 @@
     }
 
     .lnk-other-arch {
+      display: flex;
       font-size: 13pt;
       font-family: 'Raleway', sans-serif;
       font-weight: 100;
+      gap: 5px;
+      text-align: center;
+      align-items: center;
+      
+      .lnk-oth-txt {
+        display: flex;
+        gap: 5px;
+      }
+
+      @media screen and (max-width: 850px) {
+        display: flex;
+        flex-direction: column;
+      }
 
       a {
         text-decoration: underline dotted;
@@ -77,7 +98,13 @@
 
       .btns {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and (max-height: 600px) {
+          flex-wrap: nowrap;
+        }
 
         .download-btn {
           text-transform: unset;
@@ -98,6 +125,12 @@
           &:hover {
             box-shadow: 5px -1px 20px rgba(0, 0, 0, 0.4);
             transform: scale(1.05);
+          }
+
+          @media screen
+          and (max-width: 450px) {
+            width: 40vw;
+            height: 25vh;
           }
 
           .lbl-arch {
