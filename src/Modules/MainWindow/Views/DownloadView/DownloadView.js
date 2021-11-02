@@ -52,27 +52,29 @@ class DownloadView extends Component {
               <div className="dnl-title">Téléchargements</div>
 
               <div className="btns">
-
                 <Button className="download-btn" onClick={
-                () => window.location.href = (this.ua.includes("x64") ? items.x86_64 : items.x86)
-                }>
+                e => {
+                  e.preventDefault();
+                  window.location.href = (this.ua.includes("x64") ? items.x86_64 : items.x86);
+                }}>
                   <FontAwesomeIcon icon={faWindows} size="5x" />
-
                   <div className="lbl-arch">
                     {this.ua.includes("x64") ? "x86_64" : "x86"}
                   </div>
                 </Button>
                 
                 <Button className="download-btn" onClick={
-                () => window.location.href = items.universal
-                }>
+                e => {
+                  e.preventDefault();
+                  window.location.href = items.universal;
+                }}>
                   <FontAwesomeIcon icon={faJava} size="5x" />
                   <div className="lbl-arch">Universel (.jar)</div>
                 </Button>
               </div>
 
               <div className="lnk-other-arch">
-                Version {this.ua.includes("x64") 
+                <Emoji text="⚙️Pas la bonne architecture ? Essayer la version" /> {this.ua.includes("x64") 
                 ? <a href={items.x86}>x86</a>
                 : <a href={items.x86_64}>x86_64</a>}
               </div>
