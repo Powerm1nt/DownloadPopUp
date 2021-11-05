@@ -90,6 +90,10 @@ class DownloadView extends Component {
           ) : (
             <div />
           )}
+        
+          <div className="footer">
+            <span>© 2021 - TheAlfigame.</span>
+          </div>
         </div>
       </div>
     );
