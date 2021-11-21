@@ -1,4 +1,4 @@
-# thealfigame.com - Web
+# contoso.com - Web
 
 
 ## Configuration
@@ -10,9 +10,9 @@
 
 ```json
 {
-  "x86_64": "https://launcher.thealfigame.com/public/installers/current/x86_64/TheAlfigameSetup_x86_64.exe",
-  "x86": "https://launcher.thealfigame.com/public/installers/current/x86/TheAlfigameSetup_x86.exe",
-  "universal" : "https://launcher.thealfigame.com/public/dists/current/dist.jar"
+  "x86_64": "https://example.com/public/installers/current/x86_64/Setup_x86_64.exe",
+  "x86": "https://example.com/public/installers/current/x86/Setup_x86.exe",
+  "universal" : "https://example.com/public/dists/current/dist.jar"
 }
 ```
 
