@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./MainWindow.scss";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import DownloadView from "./Views/DownloadView/DownloadView";
+import Config from "../../shared/config.json"
 
 class MainWindow extends Component {
   render() {
@@ -17,7 +18,7 @@ class MainWindow extends Component {
                 <Redirect to="/downloads" />
               </Route>
             </Switch>
-            <span className="footer">© 2021 - TheAlfigame.</span>
+            <span className="footer">© 2021 - {Config.siteName} </span>
           </div>
         </BrowserRouter>
       </div>

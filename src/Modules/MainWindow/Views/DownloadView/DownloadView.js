@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindows, faJava } from "@fortawesome/free-brands-svg-icons";
 import Emoji from "react-emoji-render";
+import Config from "../../../../shared/config.json";
 
 class DownloadView extends Component {
   ua = window.navigator.userAgent;
@@ -44,7 +45,7 @@ class DownloadView extends Component {
       <div className="download-view">
         <div className="download-ui">
           <header className="ui-header">
-            <div className="hd-sub1">TheAlfigame Launcher <span className="wui-title">- Téléchargements</span></div>
+            <div className="hd-sub1">{Config.siteName} Launcher <span className="wui-title">- Téléchargements</span></div>
           </header>
 
           {err ? <Emoji className="errMsg" text="An error occured 😭" /> : isLoaded ? (
